@@ -85,19 +85,17 @@ Sample data:
 * IP Lookup API, also part of WeatherAPI offering, will be added to extrapolate user location.   
 * Potential React Router 'easter egg' for a certain family member to find
 
-## Components
-| Component | Description | 
-| --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
-
 ## Time Frames
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Initialize framework | H | .5 hrs
+| Build out components | H | 3 hrs
+| Working with API | H | 4.5 hrs|  |  |
+| Matching icons w/API results | M | 2 hrs |  | 
+| Adding Form | H | 3.5 hrs|  |  |
+| Styling | H | 4 hrs |  |  |
+| Deployment | M | 2 hrs |  |
+| **Total** |  | 19.5 hrs |  |  |
 
 ## Additional Libraries
 Supporting libraries, tutorials, code snippets, etc. will be listed here.
