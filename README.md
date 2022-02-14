@@ -20,43 +20,43 @@ Sample data:
 ```
 {
 "location": {
-"name": "Ogden",
-"region": "Utah",
-"country": "USA",
-"lat": 41.18,
-"lon": -111.92,
-"tz_id": "America/Denver",
-"localtime_epoch": 1644738612,
-"localtime": "2022-02-13 0:50"
+    "name": "Ogden",
+    "region": "Utah",
+    "country": "USA",
+    "lat": 41.18,
+    "lon": -111.92,
+    "tz_id": "America/Denver",
+    "localtime_epoch": 1644738612,
+    "localtime": "2022-02-13 0:50"
 },
 "current": {
-"last_updated_epoch": 1644738300,
-"last_updated": "2022-02-13 00:45",
-"temp_c": 1.3,
-"temp_f": 34.3,
-"is_day": 0,
-"condition": {
-"text": "Clear",
-"icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
-"code": 1000
-},
-"wind_mph": 10.5,
-"wind_kph": 16.9,
-"wind_degree": 110,
-"wind_dir": "ESE",
-"pressure_mb": 1030,
-"pressure_in": 30.41,
-"precip_mm": 0,
-"precip_in": 0,
-"humidity": 48,
-"cloud": 0,
-"feelslike_c": -1.3,
-"feelslike_f": 29.7,
-"vis_km": 16,
-"vis_miles": 9,
-"uv": 1,
-"gust_mph": 10.7,
-"gust_kph": 17.3
+    "last_updated_epoch": 1644738300,
+    "last_updated": "2022-02-13 00:45",
+    "temp_c": 1.3,
+    "temp_f": 34.3,
+    "is_day": 0,
+    "condition": {
+        "text": "Clear",
+        "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+        "code": 1000
+    },
+    "wind_mph": 10.5,
+    "wind_kph": 16.9,
+    "wind_degree": 110,
+    "wind_dir": "ESE",
+    "pressure_mb": 1030,
+    "pressure_in": 30.41,
+    "precip_mm": 0,
+    "precip_in": 0,
+    "humidity": 48,
+    "cloud": 0,
+    "feelslike_c": -1.3,
+    "feelslike_f": 29.7,
+    "vis_km": 16,
+    "vis_miles": 9,
+    "uv": 1,
+    "gust_mph": 10.7,
+    "gust_kph": 17.3
 }
 }
 ```
