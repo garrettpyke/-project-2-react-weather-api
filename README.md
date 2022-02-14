@@ -62,8 +62,7 @@ Sample data:
 ```
 
 ## Wireframes
-* [Mobile]()
-* [Desktop]()
+* [Mobile & Desktop](https://git.generalassemb.ly/garrett-pyke/project-2-react-weather-api/blob/master/wireframe.pdf)
 
 ### MVP/PostMVP
 
