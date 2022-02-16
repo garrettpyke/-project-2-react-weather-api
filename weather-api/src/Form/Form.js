@@ -12,19 +12,25 @@ export default function Form(props) {
     }
 
     const handleChange = e => {
-        console.log('handleChange triggered, value: ', e.target.value) //remove
         setLocation(e.target.value)
     }
 
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <label></label>
-
+                <label htmlFor='location'>Location</label>
+                <input 
+                    id="location"
+                    type="text"
+                    value={location}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="submit"
+                    value="Get weather info"
+                />
             </form>
         </>
     )
-
-
 
 }
