@@ -68,3 +68,9 @@ footer div {
   text-align: left;
   font-size: 1rem;
 }
+
+#icon-current {
+  grid-row: 1; 
+  position: relative;
+  transform: translateX(150%); /* see if there's a better way */
+}

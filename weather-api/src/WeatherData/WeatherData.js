@@ -10,11 +10,10 @@ export default function WeatherData({currentData}) {
         console.log("yes currentData") 
         return (
             <div className="weather-container">
-                
+                <h3 id="location-head">Weather in {currentData.location.name}, {currentData.location.region}</h3>
                 <div className="weather weather-current">
-                {/* <h3>Weather in {currentData.location.name}, {currentData.location.region}</h3> */}
-                    <h4>Current: <span>(last updated {currentData.current.last_updated})</span></h4>
-                    <img src={`${urlPrefix}${currentData.current.condition.icon}`} />
+                    <h4>Current: <span>(as of {currentData.current.last_updated})</span></h4>
+                    <img id="icon-current" src={`${urlPrefix}${currentData.current.condition.icon}`} />
                     <h5>{currentData.current.temp_f}℉ / {currentData.current.temp_c}℃</h5>
                     <h5>{currentData.current.condition.text}</h5>
                     <h5>Wind: {currentData.current.wind_mph}mph / {currentData.current.wind_kph}kph {currentData.current.wind_dir}</h5>
@@ -24,7 +23,7 @@ export default function WeatherData({currentData}) {
 
                 </div>
                 <div className="weather weather-forecast">
-                    <h4>Forecast: <span>(last updated {currentData.current.last_updated})</span></h4>
+                    <h4>Forecast: <span>(as of {currentData.current.last_updated})</span></h4>
                 </div>
             </div>
         )           

@@ -1,6 +1,15 @@
 .weather-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-top: 2px solid #D68C45;
+}
+
+#location-head {
+    grid-column: 1/span 2;
+}
+
+.weather {
+    border: 1px solid #D68C45;
 }
 
 .weather-current {
