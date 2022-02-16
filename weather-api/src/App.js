@@ -17,7 +17,6 @@ function App() {
 
   //console.log('1. url: ', url)
   // const currentDataNotEmpty = Object.keys(currentData).length
-  // interesting...if above is not commented out, currentData appears to be populated on 1st render. why?!? same thing if I console.log something.
 
   const handleSubmit = async loc => {
     let url = `${baseUrl}${apiKey}${locationParam}${loc}`
@@ -36,11 +35,7 @@ function App() {
     <div className="App">
       <Home />
       <Form  handleSubmit={handleSubmit}/>
-      <h3>
-        Wind Direction (deg.): 
-        { currentData.location ? ' ' + currentData.current.wind_degree : null}
-      </h3>
-      {/* { currentData.location ? <WeatherData currentData={currentData}/> : null } */}
+      { currentData.location ? <WeatherData currentData={currentData}/> : null  }
 
     </div>
   );

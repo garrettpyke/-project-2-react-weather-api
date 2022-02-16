@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #FEFEE3;
 }
 
 .App-logo {
@@ -38,5 +39,13 @@
 }
 
 .home img {
-  width: 500px;
+  width: auto;
+}
+
+.home h2 {
+  margin: 0rem 0rem 2.5rem 0rem;
+}
+
+.form main {
+  
 }

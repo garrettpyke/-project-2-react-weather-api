@@ -3,10 +3,18 @@
 export default function Home() {
 
     return (
-        <div className="home">
-            <h2>Welcome to my Weather API app!</h2>
-            <img src='../images/styling/home_graphic.png' alt='home'/>
-        </div>
+        <>
+            <header>
+
+            </header>
+            <div className="home">
+                <img src={require('../images/styling/home_graphic_short.jpg')} alt='home'/>
+                <h2>to my weather API app!</h2>
+            </div>
+            <footer>
+
+            </footer>
+        </>
     )
 
 }

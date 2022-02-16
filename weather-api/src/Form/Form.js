@@ -17,8 +17,8 @@ export default function Form(props) {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <label htmlFor='location'>Location</label>
+            <form className="form form-main" onSubmit={handleSubmit}>
+                <label htmlFor='location'>Location: </label>
                 <input 
                     id="location"
                     type="text"
