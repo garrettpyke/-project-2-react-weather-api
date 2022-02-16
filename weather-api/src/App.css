@@ -38,14 +38,33 @@
   }
 }
 
+header div {
+  background-color: #D68C45;
+}
+
+footer div {
+  background-color: #B02E0C;
+}
+
 .home img {
   width: auto;
 }
 
 .home h2 {
   margin: 0rem 0rem 2.5rem 0rem;
+  color: #2C6E49;
 }
 
 .form main {
-  
+  margin-bottom: 5rem; /* not working... */
+}
+
+.weather span {
+  font-size: .9em;
+}
+
+.weather h4, h5 {
+  margin: .5rem;
+  text-align: left;
+  font-size: 1rem;
 }

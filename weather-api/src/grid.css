@@ -1,0 +1,12 @@
+.weather-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.weather-current {
+    display: grid;
+}
+
+.weather-forecast {
+    grid-column: 2/3;
+}

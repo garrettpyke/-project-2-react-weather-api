@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Route, Link, Routes, Navigate } from "react-router-dom";
 import './App.css';
-import Home from './Home/Home'
-import Form from './Form/Form'
-import WeatherData from './WeatherData/WeatherData'
+import './grid.css';
+import Home from './Home/Home';
+import Form from './Form/Form';
+import WeatherData from './WeatherData/WeatherData';
 
 const baseUrl = 'https://api.weatherapi.com/v1/current.json?key='
 const apiKey = '46678c32bebd4d5da6e192958221102'
