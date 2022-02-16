@@ -6,9 +6,14 @@ import Home from './Home/Home';
 import Form from './Form/Form';
 import WeatherData from './WeatherData/WeatherData';
 
-const baseUrl = 'https://api.weatherapi.com/v1/current.json?key='
+const baseUrl = 'https://api.weatherapi.com/v1/forecast.json?key='
+//const currentUrlParam = '/current.json'
+//const forecastUrlParam = '/forecast.json'
 const apiKey = '46678c32bebd4d5da6e192958221102'
 const locationParam = '&q='
+const daysUrlParam = '&days=3'
+const aqiUrlParam = '&aqi=yes'
+const alertsParam = '&alerts=yes'
 
 function App() {
   //let location = '84403'
@@ -20,7 +25,8 @@ function App() {
   // const currentDataNotEmpty = Object.keys(currentData).length
 
   const handleSubmit = async loc => {
-    let url = `${baseUrl}${apiKey}${locationParam}${loc}`
+    // let url = `${baseUrl}${apiKey}${locationParam}${loc}${daysUrlParam}`
+    let url = `${baseUrl}${apiKey}${locationParam}${loc}${daysUrlParam}${aqiUrlParam}${alertsParam}`
     console.log('1. url: ', url)
 
     const data = await fetch(url)

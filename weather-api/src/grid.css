@@ -9,11 +9,8 @@
 }
 
 .weather {
-    border: 1px solid #D68C45;
-}
-
-.weather-current {
     display: grid;
+    border: 1px solid #D68C45;
 }
 
 .weather-forecast {

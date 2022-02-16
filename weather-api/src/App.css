@@ -74,3 +74,15 @@ footer div {
   position: relative;
   transform: translateX(150%); /* see if there's a better way */
 }
+
+.weather-icon {
+  grid-row: 1; 
+  position: relative;
+  transform: translateX(150%); /* see if there's a better way */
+}
+
+#forecast-icon {
+  grid-row: 1; 
+  position: relative;
+  transform: translateX(150%); /* see if there's a better way */
+}
