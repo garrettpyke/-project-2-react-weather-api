@@ -40,7 +40,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Navigate to="/" />} />
-        <Route path="/Aaron" element={<Aaron baseUrl={baseUrl} apiKey={apiKey} daysUrlParam={daysUrlParam} aqiUrlParam={aqiUrlParam} alertsParam={alertsParam}/>} />
+        <Route path="/Aaron" element={<Aaron baseUrl={baseUrl} apiKey={apiKey} locationParam={locationParam} daysUrlParam={daysUrlParam} aqiUrlParam={aqiUrlParam} alertsParam={alertsParam} handleSubmit={handleSubmit}  />} />
         {/* <Route path="/location/:param" /> */}
       </Routes>
       <Form  handleSubmit={handleSubmit}/>
