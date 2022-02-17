@@ -14,11 +14,11 @@ export default function Home() {
                 <img src={welcome_img} alt="welcome image"/>
                 <h2>to my weather API app!</h2>
             </div>
-            <footer>
+            {/* <footer>
                 <div>
                     
                 </div>
-            </footer>
+            </footer> */}
         </>
     )
 

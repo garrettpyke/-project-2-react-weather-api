@@ -45,7 +45,7 @@
 .main-container {
   display: grid;
   /* grid-template-rows: .2fr 10fr 1fr 10fr; */
-  grid-template-rows: .2fr 8fr 1fr 10fr;
+  grid-template-rows: .2fr 6fr 1fr 10fr;
 }
 
 .home {
