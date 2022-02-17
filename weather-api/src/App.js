@@ -39,11 +39,15 @@ function App() {
   console.log("3. currentData: ", currentData)
  
   return (
-    <div className="App">
-      <Home />
+    <div className="main-container">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Navigate to="/" />} />
+        <Route path="/location/:param" />
+      </Routes>
       <Form  handleSubmit={handleSubmit}/>
+      
       { currentData.location ? <WeatherData currentData={currentData}/> : null  }
-
     </div>
   );
 }

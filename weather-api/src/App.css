@@ -8,11 +8,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -29,17 +29,38 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+* {
+  background-color: #FEFEE3;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: .2fr 10fr 1fr 10fr;
+}
+
+.home {
+  grid-row: 2/3;
+  text-align: center;
+}
+
+.form-main, form label {
+  grid-row: 3/4;
+  text-align: center;
+  background-color: #4C956C;
 }
 
 header div {
   background-color: #D68C45;
+  
 }
 
 footer div {
@@ -47,16 +68,21 @@ footer div {
 }
 
 .home img {
-  width: auto;
+  width: 100%;
 }
 
 .home h2 {
   margin: 0rem 0rem 2.5rem 0rem;
-  color: #2C6E49;
+  /* color: #2C6E49; */
+  /* color: #8AA404; */
+  /* color: #4C956C; */
+  color: #B02E0C;
+
 }
 
-.form main {
-  margin-bottom: 5rem; /* not working... */
+.weather-container {
+  grid-row: 4/5;
+  margin-top: 3rem;
 }
 
 .weather span {

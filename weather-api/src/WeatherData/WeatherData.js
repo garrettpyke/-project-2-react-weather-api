@@ -24,7 +24,7 @@ export default function WeatherData({currentData}) {
                 </div>
                 <div className="weather weather-forecast">
                     <h4>Tomorrow's Forecast</h4>
-                    <img class="weather-icon" id="forecast-icon" src={`${urlPrefix}${currentData.forecast.forecastday[1].day.condition.icon}`} />
+                    <img className="weather-icon" id="forecast-icon" src={`${urlPrefix}${currentData.forecast.forecastday[1].day.condition.icon}`} />
                     <h5>{currentData.forecast.forecastday[1].day.condition.text}</h5>
                     <h5>{currentData.forecast.forecastday[1].day.avgtemp_f}℉ / {currentData.forecast.forecastday[1].day.avgtemp_c}℃</h5>
                     <h5>Wind: {currentData.forecast.forecastday[1].day.maxwind_mph}mph / {currentData.forecast.forecastday[1].day.maxwind_kph}kph</h5>
