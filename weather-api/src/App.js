@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Route, Link, Routes, Navigate } from "react-router-dom";
 import './App.css';
-import './grid.css';
+import './Grid.css';
 import Home from './Home/Home';
 import Form from './Form/Form';
 import WeatherData from './WeatherData/WeatherData';

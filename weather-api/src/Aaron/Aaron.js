@@ -1,19 +1,17 @@
 import { useState, useEffect } from "react";
+import './Aaron.css'
 
-export default function Aaron({ baseUrl, apiKey, locationParam, daysUrlParam, aqiUrlParam, alertsParam, handleSubmit }) {
+export default function Aaron({ handleSubmit }) {
 
     const [ broLocation, setBroLocation ] = useState('98274')
-
-    // const broUrl = `${baseUrl}${apiKey}${broLocation}${daysUrlParam}${aqiUrlParam}${alertsParam}`
-    //console.log("broUrl: ", broUrl) //remove
 
     useEffect(() => {
         handleSubmit(broLocation);
     }, [broLocation])
 
-
-
     return (
-        <h2>Aaron's Page</h2>
+        <div className="bro-div">
+            <h2>Aaron's Page</h2>
+        </div>
     )
 }
