@@ -13,7 +13,7 @@ export default function WeatherData({currentData}) {
                 <h3 id="location-head">Weather in {currentData.location.name}, {currentData.location.region}</h3>
                 <div className="weather weather-current">
                     <h4>Current <span>(as of {currentData.current.last_updated})</span></h4>
-                    <img class="weather-icon" id="icon-current" src={`${urlPrefix}${currentData.current.condition.icon}`}/>
+                    <img className="weather-icon" id="icon-current" src={`${urlPrefix}${currentData.current.condition.icon}`}/>
                     <h5>{currentData.current.condition.text}</h5>
                     <h5>{currentData.current.temp_f}℉ / {currentData.current.temp_c}℃</h5>
                     <h5>Wind: {currentData.current.wind_mph}mph / {currentData.current.wind_kph}kph ({currentData.current.wind_dir})</h5>

@@ -44,7 +44,8 @@
 
 .main-container {
   display: grid;
-  grid-template-rows: .2fr 10fr 1fr 10fr;
+  /* grid-template-rows: .2fr 10fr 1fr 10fr; */
+  grid-template-rows: .2fr 8fr 1fr 10fr;
 }
 
 .home {
@@ -55,6 +56,7 @@
 .form-main, form label {
   grid-row: 3/4;
   text-align: center;
+  align-self: center;
   background-color: #4C956C;
 }
 
@@ -85,6 +87,10 @@ footer div {
   margin-top: 3rem;
 }
 
+#location-head {
+  justify-self: center;
+}
+
 .weather span {
   font-size: .9em;
 }
@@ -95,20 +101,7 @@ footer div {
   font-size: 1rem;
 }
 
-#icon-current {
-  grid-row: 1; 
-  position: relative;
-  transform: translateX(150%); /* see if there's a better way */
-}
-
 .weather-icon {
   grid-row: 1; 
-  position: relative;
-  transform: translateX(150%); /* see if there's a better way */
-}
-
-#forecast-icon {
-  grid-row: 1; 
-  position: relative;
-  transform: translateX(150%); /* see if there's a better way */
+  justify-self: center;
 }
