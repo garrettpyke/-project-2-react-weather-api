@@ -5,6 +5,7 @@ import './grid.css';
 import Home from './Home/Home';
 import Form from './Form/Form';
 import WeatherData from './WeatherData/WeatherData';
+import Aaron from './Aaron/Aaron'
 
 const baseUrl = 'https://api.weatherapi.com/v1/forecast.json?key='
 //const currentUrlParam = '/current.json'
@@ -20,20 +21,16 @@ function App() {
 
   //const [url, setUrl] = useState(`${baseUrl}${apiKey}${locationParam}${location}`)
   const [currentData, setCurrentData] = useState({})
-
-  //console.log('1. url: ', url)
-  // const currentDataNotEmpty = Object.keys(currentData).length
-
+  
   const handleSubmit = async loc => {
-    // let url = `${baseUrl}${apiKey}${locationParam}${loc}${daysUrlParam}`
     let url = `${baseUrl}${apiKey}${locationParam}${loc}${daysUrlParam}${aqiUrlParam}${alertsParam}`
-    console.log('1. url: ', url)
+    console.log('1. url: ', url) //remove
 
     const data = await fetch(url)
     const jsonData = await data.json()
     setCurrentData(jsonData)
 
-    console.log('2. url: ', url)
+    console.log('2. url: ', url) //remove
   }  
 
   console.log("3. currentData: ", currentData)
@@ -43,7 +40,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Navigate to="/" />} />
-        <Route path="/location/:param" />
+        <Route path="/Aaron" element={<Aaron baseUrl={baseUrl} apiKey={apiKey} daysUrlParam={daysUrlParam} aqiUrlParam={aqiUrlParam} alertsParam={alertsParam}/>} />
+        {/* <Route path="/location/:param" /> */}
       </Routes>
       <Form  handleSubmit={handleSubmit}/>
       
